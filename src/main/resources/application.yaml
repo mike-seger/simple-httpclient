@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: demoApp
+
+api:
+  base: http://localhost:8080/
+  get: ${api.base}/test-get
+  put: ${api.base}/test-put
+  post: ${api.base}/test-post
+
+client:
+  ssl:
+    key-store: classpath:certs/client_keystore.p12
+    key-store-password: password
+    trust-store: classpath:certs/client_truststore.p12
+    trust-store-password: password
